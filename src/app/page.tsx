@@ -14,6 +14,7 @@ import Products from "@/components/Products/Products";
 import About from "@/components/About/About";
 import AppStore from "@/components/AppStore/AppStore";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import Footer from "@/components/Footer/Footer";
 
 const Page = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const Page = () => {
       <About />
       <AppStore />
       <Testimonials />
+      <Footer />
     </div>
   );
 };
