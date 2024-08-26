@@ -4,7 +4,7 @@ import React from "react";
 
 const Products = () => {
   return (
-    <div className="bg-white py-10 dark:bg-dark dark:text-white">
+    <div id="products" className="bg-white py-10 dark:bg-dark dark:text-white">
       <div className="container">
         <div data-aos="fade-up" className="mb-20 text-center">
           <h1 className="text-4xl font-bold text-gray-800 dark:text-white">

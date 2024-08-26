@@ -16,7 +16,7 @@ const About = () => {
   return (
     <div style={bgStyle}>
       <div className="flex min-h-[530px] items-center bg-black/80 py-10 text-white">
-        <div className="container">
+        <div data-aos="fade-up" data-aos-delay="300" className="container">
           <div className="space-y-3 text-center uppercase">
             <p className="text-2xl font-semibold text-primary">Why choose us</p>
             <h1>Our commitment</h1>

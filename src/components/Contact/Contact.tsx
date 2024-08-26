@@ -22,7 +22,7 @@ const Contact = () => {
               molestiae cum sit?
             </p>
             <button className="rounded-lg bg-black px-4 py-2 text-white">
-              Book Now
+              Find out more
             </button>
           </div>
 

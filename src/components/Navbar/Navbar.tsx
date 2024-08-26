@@ -6,13 +6,49 @@ import { mockData } from "@/mocks/data";
 import DarkMode from "./DarkMode";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import MobileMenu from "./MobileMenu";
-import { usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   const pathName = usePathname();
   const [showMenu, setShowMenu] = useState(false);
+
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+  };
+
+  const handleNavigation = (link: string) => {
+    if (link === "/cars") {
+      if (pathName !== "/") {
+        router.push("/");
+      } else {
+        setTimeout(() => {
+          const productsSection = document.getElementById("products");
+          if (productsSection) {
+            productsSection.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        }, 100);
+      }
+
+      // if (pathName === "/") {
+      //   setTimeout(() => {
+      //     const productsSection = document.getElementById("products");
+      //     if (productsSection) {
+      //       productsSection.scrollIntoView({
+      //         behavior: "smooth",
+      //         block: "start",
+      //       });
+      //     }
+      //   }, 100);
+      // } else {
+      //   router.push("/");
+      // }
+    } else {
+      router.push(link);
+    }
   };
 
   return (
@@ -35,6 +71,10 @@ const Navbar = () => {
                   <li key={item.id}>
                     <Link
                       href={item.link}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleNavigation(item.link);
+                      }}
                       className={`${isActive ? "bg-primary dark:text-black" : ""} rounded-full px-4 py-2 text-lg font-medium text-black duration-300 hover:bg-primary hover:text-white dark:text-white`}
                     >
                       {item.name}
