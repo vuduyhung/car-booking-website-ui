@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import Contact from "@/components/Contact/Contact";
+import Products from "@/components/Products/Products";
 
 const Page = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const Page = () => {
       {/* <Navbar /> */}
       <Hero />
       <Contact />
+      <Products />
     </div>
   );
 };
