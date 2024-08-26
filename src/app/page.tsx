@@ -11,6 +11,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import Contact from "@/components/Contact/Contact";
 import Products from "@/components/Products/Products";
+import About from "@/components/About/About";
 
 const Page = () => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const Page = () => {
       <Hero />
       <Contact />
       <Products />
+      <About />
     </div>
   );
 };
