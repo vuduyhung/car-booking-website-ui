@@ -12,6 +12,7 @@ import Hero from "@/components/Hero/Hero";
 import Contact from "@/components/Contact/Contact";
 import Products from "@/components/Products/Products";
 import About from "@/components/About/About";
+import AppStore from "@/components/AppStore/AppStore";
 
 const Page = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const Page = () => {
       <Contact />
       <Products />
       <About />
+      <AppStore />
     </div>
   );
 };
