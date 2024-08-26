@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React, { useState } from "react";
 import { mockData } from "@/mocks/data";
@@ -12,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="dark:bg-black dark:text-white relative z-10 w-full shadow-md duration-300">
+    <nav className="relative z-10 w-full shadow-md duration-300 dark:bg-black dark:text-white">
       <div className="container">
         <div className="flex items-center justify-between py-2 md:py-0">
           {/* Logo section */}
@@ -28,7 +30,7 @@ const Navbar = () => {
                 <li key={item.id}>
                   <Link
                     href={item.link}
-                    className={`text-black dark:text-white hover:text-white rounded-full px-4 py-2 text-lg font-medium duration-300 hover:bg-primary`}
+                    className={`rounded-full px-4 py-2 text-lg font-medium text-black duration-300 hover:bg-primary hover:text-white dark:text-white`}
                   >
                     {item.name}
                   </Link>
@@ -54,7 +56,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <MobileMenu showMenu={showMenu} />
+      <MobileMenu showMenu={showMenu} toggleMenu={toggleMenu} />
     </nav>
   );
 };

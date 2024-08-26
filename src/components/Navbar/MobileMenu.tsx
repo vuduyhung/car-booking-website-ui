@@ -3,7 +3,13 @@ import { FaUserCircle } from "react-icons/fa";
 import { mockData } from "@/mocks/data";
 import Link from "next/link";
 
-const MobileMenu = ({ showMenu }: { showMenu: boolean }) => {
+const MobileMenu = ({
+  showMenu,
+  toggleMenu,
+}: {
+  showMenu: boolean;
+  toggleMenu: () => void;
+}) => {
   console.log("showMenu", showMenu);
   return (
     <div
@@ -26,6 +32,7 @@ const MobileMenu = ({ showMenu }: { showMenu: boolean }) => {
               <li key={item.id} className="py-4">
                 <Link
                   href={item.link}
+                  onClick={toggleMenu}
                   className="rounded-full py-2 text-xl font-medium text-black duration-300 hover:text-white dark:text-white"
                 >
                   {item.name}

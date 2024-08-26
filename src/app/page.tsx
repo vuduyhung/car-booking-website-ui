@@ -24,7 +24,7 @@ const Page = () => {
 
   return (
     <div className="dark:bg-black dark:text-white">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Contact />
     </div>
