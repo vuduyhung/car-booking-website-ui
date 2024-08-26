@@ -51,3 +51,41 @@ export const productData = [
     aosDelay: 500,
   },
 ];
+
+export const testimonialData = [
+  {
+    id: 1,
+    name: "Johnathan",
+    position: "CEO",
+    image: "https://picsum.photos/100/100",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    id: 2,
+    name: "Jane Doe",
+    position: "Developer",
+    image: "https://picsum.photos/101/101",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    id: 3,
+    name: "Alan Smith",
+    position: "Tester",
+    image: "https://picsum.photos/102/102",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    id: 4,
+    name: "January",
+    position: "CEO",
+    image: "https://picsum.photos/103/103",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    id: 5,
+    name: "Michael Ballack",
+    image: "https://picsum.photos/104/104",
+    position: "CEO",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+];

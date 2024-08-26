@@ -13,6 +13,7 @@ import Contact from "@/components/Contact/Contact";
 import Products from "@/components/Products/Products";
 import About from "@/components/About/About";
 import AppStore from "@/components/AppStore/AppStore";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 const Page = () => {
   useEffect(() => {
@@ -33,6 +34,7 @@ const Page = () => {
       <Products />
       <About />
       <AppStore />
+      <Testimonials />
     </div>
   );
 };

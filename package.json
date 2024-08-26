@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-slick": "^0.23.13",
     "aos": "^3.0.0-beta.6",
     "next": "14.2.6",
     "react": "^18",
