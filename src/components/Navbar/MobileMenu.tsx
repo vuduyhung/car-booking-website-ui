@@ -7,7 +7,7 @@ const MobileMenu = ({ showMenu }: { showMenu: boolean }) => {
   console.log("showMenu", showMenu);
   return (
     <div
-      className={`${showMenu ? "left-0" : "hidden"} bg-white dark:text-white text-black fixed bottom-0 top-0 z-10 flex h-screen w-[75%] flex-col justify-between rounded-r-xl px-8 pb-6 pt-16 shadow-md transition-all duration-300 dark:bg-dark md:hidden relative`}
+      className={`${showMenu ? "left-0" : "hidden"} fixed bottom-0 top-0 z-10 flex h-screen w-[75%] flex-col justify-between rounded-r-xl bg-white px-8 pb-6 pt-16 text-black shadow-md transition-all duration-300 dark:bg-dark dark:text-white md:hidden`}
     >
       <div>
         {/* User profile */}
@@ -15,7 +15,7 @@ const MobileMenu = ({ showMenu }: { showMenu: boolean }) => {
           <FaUserCircle className="text-5xl" />
           <div>
             <h1>User</h1>
-            <h2 className="text-slate-500 text-sm">Premium user</h2>
+            <h2 className="text-sm text-slate-500">Premium user</h2>
           </div>
         </div>
 
@@ -26,7 +26,7 @@ const MobileMenu = ({ showMenu }: { showMenu: boolean }) => {
               <li key={item.id} className="py-4">
                 <Link
                   href={item.link}
-                  className="text-black dark:text-white hover:text-white rounded-full py-2 text-xl font-medium duration-300"
+                  className="rounded-full py-2 text-xl font-medium text-black duration-300 hover:text-white dark:text-white"
                 >
                   {item.name}
                 </Link>
