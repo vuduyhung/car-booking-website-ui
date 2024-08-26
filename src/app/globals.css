@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .inputField {
+    @apply mb-4 border-b-2 border-gray-300 px-5 py-1 ring-0 focus:outline-none focus:ring-0;
+  }
+}
