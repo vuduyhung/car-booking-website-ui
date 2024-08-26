@@ -63,7 +63,7 @@ const Navbar = () => {
 
           {/* Desktop menu section */}
           <div className="hidden md:block">
-            <ul className="flex items-center gap-6">
+            <ul className="flex items-center gap-6 py-4">
               {mockData.menuItem.map((item) => {
                 const isActive = pathName === item.link;
 

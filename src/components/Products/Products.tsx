@@ -24,7 +24,7 @@ const Products = () => {
                 <Image
                   src={item.image}
                   alt=""
-                  className="mx-auto block max-w-[200px] -translate-y-20 transform duration-300 group-hover:translate-x-4 group-hover:scale-110"
+                  className="mx-auto block max-w-[300px] -translate-y-20 transform duration-300 group-hover:translate-x-4 group-hover:scale-110"
                 />
               </div>
 

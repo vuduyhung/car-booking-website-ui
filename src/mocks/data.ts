@@ -1,4 +1,4 @@
-import Img2 from "../assets/car2.png";
+import Img2 from "../assets/car1.png";
 
 export const mockData = {
   menuItem: [

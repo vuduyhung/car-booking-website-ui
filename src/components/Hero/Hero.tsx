@@ -1,5 +1,5 @@
 import React from "react";
-import yellowCab from "../../assets/yellow-cab.png";
+import yellowCab from "../../assets/car1.png";
 import bgCity from "../../assets/city.jpg";
 import Image from "next/image";
 
