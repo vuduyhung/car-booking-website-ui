@@ -36,7 +36,7 @@ const Page = () => {
       <About />
       <AppStore />
       <Testimonials />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

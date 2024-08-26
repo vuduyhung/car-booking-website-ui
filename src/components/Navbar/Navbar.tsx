@@ -6,8 +6,10 @@ import { mockData } from "@/mocks/data";
 import DarkMode from "./DarkMode";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import MobileMenu from "./MobileMenu";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathName = usePathname();
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -26,16 +28,20 @@ const Navbar = () => {
           {/* Desktop menu section */}
           <div className="hidden md:block">
             <ul className="flex items-center gap-6">
-              {mockData.menuItem.map((item) => (
-                <li key={item.id}>
-                  <Link
-                    href={item.link}
-                    className={`rounded-full px-4 py-2 text-lg font-medium text-black duration-300 hover:bg-primary hover:text-white dark:text-white`}
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
+              {mockData.menuItem.map((item) => {
+                const isActive = pathName === item.link;
+
+                return (
+                  <li key={item.id}>
+                    <Link
+                      href={item.link}
+                      className={`${isActive ? "bg-primary dark:text-black" : ""} rounded-full px-4 py-2 text-lg font-medium text-black duration-300 hover:bg-primary hover:text-white dark:text-white`}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="flex items-center gap-4">
